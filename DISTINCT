@@ -1,0 +1,2 @@
+SELECT `country` FROM `icecreams`;
+SELECT DISTINCT `country` FROM `icecreams`;
