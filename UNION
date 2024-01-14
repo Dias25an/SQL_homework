@@ -1,0 +1,11 @@
+SELECT `country` FROM `chocolates`
+	UNION
+SELECT `country` FROM `icecreams`;
+
+SELECT `country` FROM `chocolates`
+	UNION ALL
+SELECT `country` FROM `icecreams`;
+
+SELECT * FROM (SELECT country  AS `countries` FROM chocolates
+	UNION ALL 
+SELECT country FROM icecreams)  AS `countries` ORDER BY `countries` ;
